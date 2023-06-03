@@ -7,7 +7,6 @@ This is a React-based weather application that allows users to retrieve weather 
 - Retrieve current weather details, including temperature, humidity, wind speed, and conditions.
 - View the forecast for the next few days, including temperature highs and lows, and weather conditions.
 - Automatic location detection to display weather information for the user's current location.
-- Responsive design for a seamless experience on various devices.
 
 ## Demo
 A live demo of the app is available at https://smalik21.github.io/weather-app-React/
