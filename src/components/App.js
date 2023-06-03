@@ -89,7 +89,7 @@ function App() {
   }
 
   function getData(location) {
-    
+
     const url = "http://api.weatherapi.com/v1/forecast.json?key=" + apiKey + "&q=" + location + "&days=5&aqi=no&alerts=no"
 
     axios.get(url, { crossdomain: true }).then(response => {
