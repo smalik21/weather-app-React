@@ -1,12 +1,11 @@
 import SearchButton from './SearchButton';
 import { useState } from 'react';
 
-function Search(props) {
+function Search({ location }) {
 
     const [text, setText] = useState("");
 
     const handleKeyDown = event => {
-
         if (event.key === 'Enter') {
             handleClick();
         }
@@ -17,7 +16,9 @@ function Search(props) {
     }
 
     function handleClick(event) {
-        props.location(text);
+        if (text === "") return;
+
+        location(text);
         setText("");
     }
 
@@ -30,6 +31,7 @@ function Search(props) {
                 className="search-input"
                 type="text"
                 placeholder="Enter the location here..."
+                spellCheck="false"
             />
 
             <SearchButton onAdd={handleClick} />

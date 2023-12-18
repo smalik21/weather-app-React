@@ -1,9 +1,9 @@
 
-function SearchButton(props) {
+function SearchButton({ onAdd }) {
 
     function handleClick(event) {
-        props.onAdd();
         event.preventDefault();
+        onAdd();
     }
 
     return (
