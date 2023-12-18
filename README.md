@@ -14,7 +14,7 @@ A live demo of the app is available at https://smalik21.github.io/weather-app-Re
 ## Installation
 Follow the steps below to run the application locally:
 - Clone this repository to your local machine using:
-`git clone https://github.com/your-username/weather-app-React.git`
+`git clone https://github.com/smalik21/weather-app-React.git`
 - Navigate to the project directory:
 `cd weather-app-React`
 - Install the dependencies:
