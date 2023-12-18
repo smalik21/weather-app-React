@@ -46,7 +46,7 @@ function App() {
         axios.get(url, { crossdomain: true })
 
             .then(response => {
-                console.log("response:", response)
+                // console.log("response:", response)
 
                 if (response.status === 200) {
 
