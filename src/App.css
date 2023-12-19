@@ -116,11 +116,6 @@
 }
 
 .place {
-    display: grid;
-    grid-template-areas:
-        'row1 row1'
-        'row21 row22';
-
     align-items: center;
     justify-content: space-evenly;
     /* font-family: 'Inter'; */
@@ -132,7 +127,7 @@
 }
 
 .location {
-    grid-area: row1;
+    /* grid-area: row1; */
     margin: 0;
     padding: 0;
     /* border: solid 1px blue; */
@@ -140,25 +135,33 @@
     font-weight: 900;
 }
 
+.region-country {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    width: 300px;
+    justify-content: space-evenly;
+    /* border: solid 1px; */
+}
+
 .region {
-    grid-area: row21;
+    /* grid-area: row21; */
     margin: 0;
     padding: 0;
     display: inline-block;
     font-size: 20px;
 
-    width: 150px;
+    /* width: 150px; */
     /* border: solid 1px blue; */
 }
 
 .country {
-    grid-area: row22;
+    /* grid-area: row22; */
     margin: 0;
     padding: 0;
     display: inline-block;
     font-size: 20px;
-
-    width: 150px;
+    /* width: 150px; */
     /* border: solid 1px blue; */
 }
 
@@ -342,7 +345,7 @@
 }
 
 .forecast {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -442,5 +445,28 @@
     .card {
         margin-top: 1rem;
         width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .search {
+        height: 45px;
+    }
+
+    .search-input {
+        height: 40px;
+        padding: 0 1rem 0 1rem;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .search-input::placeholder {
+        font-size: 18px;
+    }
+
+    .search-button {
+        width: 80px;
+        font-weight: 200;
+        font-size: 16px;
     }
 }
