@@ -171,6 +171,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     height: 250px;
@@ -184,8 +185,8 @@
     justify-content: center;
     margin: 0;
 
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     padding: 1rem;
     border-radius: 50%;
     background-color: #3f3f3f55;
@@ -198,7 +199,7 @@
     padding: 0;
     text-align: center;
     font-family: 'Genos', sans-serif;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 800;
     align-items: center;
     justify-content: center;
